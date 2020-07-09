@@ -13,10 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Set up Go 1.x
+    - name: Set up Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: '9.0.4'
+
+    - name: Set up Go 1.14
       uses: actions/setup-go@v2
       with:
-        go-version: ^1.13
+        go-version: ^1.14
       id: go
 
     - name: Check out code into the Go module directory
@@ -24,6 +29,9 @@ jobs:
 
     - name: Get dependencies
       run: go mod download
+
+    - name: Setup
+      run: make setup
 
     - name: Test
       run: make test
