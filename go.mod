@@ -1,3 +1,3 @@
-module github.com/z-division/go-zookeeper
+module github.com/Shopify/go-zookeeper
 
-go 1.13
+go 1.14
