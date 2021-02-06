@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Shopify/go-zookeeper/zk"
+	"github.com/Platform28Cloud/go-zookeeper/zk"
 )
 
 func main() {
