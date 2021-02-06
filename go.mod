@@ -1,4 +1,4 @@
-module github.com/Shopify/go-zookeeper
+module github.com/Platform28/go-zookeeper
 
 go 1.14
 
